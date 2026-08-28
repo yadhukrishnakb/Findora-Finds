@@ -1,0 +1,314 @@
+.bg-container {
+    min-height: 100vh;
+    width: 100%;
+
+    background: #e7e1ed;
+
+    padding-bottom: 50px;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+/* ==================== */
+/* Categories */
+/* ==================== */
+
+.category-list {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 0 auto 25px;
+    padding: 5px 0;
+
+    list-style: none;
+
+    box-sizing: border-box;
+}
+
+.category-list li {
+    flex: 0 0 auto;
+}
+
+/* ==================== */
+/* Products */
+/* ==================== */
+
+.products-list {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    box-sizing: border-box;
+}
+
+/* ==================== */
+/* Loader */
+/* ==================== */
+
+.loader-container {
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================== */
+/* Failure */
+/* ==================== */
+
+.failure-container {
+    width: 100%;
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.failure-img {
+    width: 280px;
+    max-width: 80%;
+    height: auto;
+
+    margin-bottom: 5px;
+}
+
+.failure-container p {
+    width: 100%;
+    max-width: 450px;
+
+    margin: 0 0 22px;
+
+    color: #555;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    box-sizing: border-box;
+}
+
+.failure-container button {
+    border: none;
+    outline: none;
+
+    padding: 11px 24px;
+
+    border-radius: 8px;
+
+    background-color: #111;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.failure-container button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.failure-container button:active {
+    transform: translateY(0);
+}
+
+/* ==================== */
+/* Tablet */
+/* ==================== */
+
+@media (max-width: 1000px) {
+    .products-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* ==================== */
+/* Mobile */
+/* ==================== */
+
+@media (max-width: 700px) {
+    .content-container {
+        padding: 15px;
+    }
+
+    .category-list {
+        gap: 8px;
+    }
+
+    .products-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+}
+
+/* ==================== */
+/* Small Mobile */
+/* ==================== */
+
+@media (max-width: 600px) {
+    .failure-container {
+        min-height: 55vh;
+        padding: 30px 16px;
+    }
+
+    .failure-img {
+        width: 220px;
+        margin-bottom: 16px;
+    }
+
+    .failure-container p {
+        max-width: 330px;
+
+        font-size: 14px;
+        line-height: 1.5;
+
+        margin-bottom: 18px;
+    }
+
+    .failure-container button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* ==================== */
+/* Very Small Mobile */
+/* ==================== */
+
+@media (max-width: 380px) {
+    .content-container {
+        padding: 10px;
+    }
+
+    .category-list {
+        gap: 7px;
+    }
+
+    .products-list {
+        gap: 10px;
+    }
+}
+
+.search-result-not-found {
+    width: 100%;
+    min-height: 300px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.no-result-image {
+    width: 220px;
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.search-result-not-found p {
+    margin: 0 0 20px;
+    max-width: 400px;
+
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Button */
+.search-result-not-found button {
+    border: none;
+    outline: none;
+
+    padding: 11px 24px;
+    border-radius: 8px;
+
+    background-color: #222;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-result-not-found button:hover {
+    background-color: #000;
+    transform: translateY(-1px);
+}
+
+.search-result-not-found button:active {
+    transform: translateY(0);
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    .search-result-not-found {
+        min-height: 250px;
+        padding: 30px 16px;
+    }
+
+    .no-result-image {
+        width: 170px;
+        margin-bottom: 16px;
+    }
+
+    .search-result-not-found p {
+        font-size: 15px;
+        max-width: 300px;
+        margin-bottom: 18px;
+    }
+
+    .search-result-not-found button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

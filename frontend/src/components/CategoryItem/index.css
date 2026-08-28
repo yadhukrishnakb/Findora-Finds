@@ -1,0 +1,44 @@
+.category-item {
+    list-style: none;
+    flex-shrink: 0;
+}
+
+.category-item button {
+    border: 1px solid #e5e5e5;
+    background: #ffffff;
+    color: #555;
+
+    padding: 9px 18px;
+    border-radius: 999px;
+
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+
+    cursor: pointer;
+    white-space: nowrap;
+
+    transition: all 0.2s ease;
+}
+
+.category-item button:hover {
+    background: #f5f5f5;
+    color: #111;
+    border-color: #d5d5d5;
+    transform: translateY(-1px);
+}
+
+/* Active category */
+.category-item button.active {
+    background: #111;
+    color: #ffffff;
+    border-color: #111;
+}
+
+/* If your dynamicClassName uses another active class,
+   replace .active with that class name */
+
+.category-item button.active:hover {
+    background: #222;
+    border-color: #222;
+}
