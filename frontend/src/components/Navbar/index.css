@@ -327,7 +327,9 @@
 }
 
 @supports (-webkit-touch-callout: none) {
-    .search-container input {
-        font-size: 16px;
+    @media (hover: none) and (pointer: coarse) {
+        .search-container input {
+            font-size: 16px !important;
+        }
     }
 }
