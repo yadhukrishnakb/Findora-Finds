@@ -201,6 +201,7 @@
 
     .search-container input {
         height: 45px;
+        font-size: 16px;
     }
 }
 
@@ -244,7 +245,9 @@
         height: 43px;
         padding: 0 15px;
         border-radius: 12px;
-        font-size: 14px;
+
+        /* Prevent mobile browser focus zoom */
+        font-size: 16px;
     }
 }
 
@@ -287,7 +290,9 @@
     .search-container input {
         height: 41px;
         padding: 0 13px;
-        font-size: 13px;
+
+        /* Keep 16px on small phones too */
+        font-size: 16px;
     }
 }
 
@@ -314,5 +319,9 @@
 
     .navbar-socials {
         gap: 1px;
+    }
+
+    .search-container input {
+        font-size: 16px;
     }
 }
