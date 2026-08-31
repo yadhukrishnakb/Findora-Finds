@@ -17,6 +17,8 @@ const ProductCard = ({ productDetails }) => {
                 />
                 <p className="product-title">{title}</p>
             </a>
+            <a href={productLink} rel="noopener noreferrer" target="_blank" className="purchase-link">Buy Now ~
+            </a>
         </li>
     )
 }
